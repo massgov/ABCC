@@ -1,0 +1,42 @@
+	h1 { text-align:center;}
+	form, table {margin: 0 auto; }
+	
+	table {
+		width:1800px; 
+		height:224px;  
+		border:2px solid white;	
+	}
+	
+	th {
+		padding:1em;
+		border:2px solid white;
+	}
+
+	tr, td {
+		background-color:lightgray;
+		padding:1em;	
+	}		
+	
+	th {
+		background-color:#43956f;
+		color:white;
+		font-size: 1.10em;
+	}
+
+	#col2, #col3, #col4, #col5 {
+	width:130px;	
+	}
+	
+	#col1 {
+		padding:1em;
+		margin:2em;
+	}
+	
+	#total {
+		font-weight:bold;
+		text-align:right;
+	}
+
+	input {
+		border:.5px solid gray;
+	}
