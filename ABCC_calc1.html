@@ -45,7 +45,7 @@
 	  var doc = (iframe.contentDocument)? iframe.contentDocument: iframe.contentWindow.document;
 	  var anchors = doc.getElementsByTagName('a');
 	  for (var i = 0; i < anchors.length; i++)
-		  anchors[i].target = '_parent';
+		  anchors[i].target = '_self';
 	</script>
     
   <script type="text/javascript">/* Calculator logic*/
@@ -53,7 +53,7 @@
 	</script>
 </head>
 <body>
-				<p id="calc_start">To see your total costs across standard bottle sizes, <a href="#total_header"  target="_parent">click here</a>.</p>
+				<p id="calc_start">To see your total costs across standard bottle sizes, <a href="#total_header"  target="_self">click here</a>.</p>
 				
  				<section class="calc-comp">
 					<h3 class="ma__comp-heading">375 ml Demi or Half: Holds one-half of the standard 750 ml size </h3>
@@ -126,7 +126,7 @@
 						<input type="text" id="txtTotalGallons" name="txtTotalGallons" readonly class="bold" />
 					</section>
 					
-				<p><a href="#calc_start" target="_parent">Click here</a> to enter values to calculate cost estimates.</p>
+				<p><a href="#calc_start" target="_self">Click here</a> to enter values to calculate cost estimates.</p>
 				<!--
 					<input type="text" id="txtNumOfBottles750" name="txtNumOfBottles750" />
 					<input type="text" id="txtNumOfBottles1500" name="txtNumOfBottles1500" />
