@@ -10,6 +10,7 @@
   
   <style>
 	  p {font-style:italic;
+		  margin-top:1em;
 	  }
 	  
 	  h3 {
@@ -45,7 +46,7 @@
 	</script>
 </head>
 <body>
-				<p id="calc_start">To see your total costs across standard bottle sizes, scroll to the end of this page.</p>
+				<p id="calc_start">To see your total costs across standard bottle sizes, click <a href="#totals">here</a>.</p>
 				
  				<section class="calc-comp">
 					<h3 class="ma__comp-heading">375 ml Demi or Half: Holds one-half of the standard 750 ml size </h3>
@@ -109,13 +110,15 @@
 					<input type="text" id="txtGallons3000" name="txtGallons3000" readonly />
 				</section>
 				<section class="calc-comp">
-						<h3 class="ma__comp-heading" id="total_header">Total amounts</h3>
+						<h3 class="ma__comp-heading" id="totals">Total amounts</h3>
 						
 						<h4>Total cost across bottle sizes</h4>
 						<input type="text" id="txtTotalCost" name="txtTotalCost" readonly class="bold" />
 
 						<h4>Total gallons across bottle sizes</h4>
 						<input type="text" id="txtTotalGallons" name="txtTotalGallons" readonly class="bold" />
+						
+						<p id="">To calculate additional totals, <a href="#calc_start">click here</a>.</p>
 					</section>
 									<!--
 					<input type="text" id="txtNumOfBottles750" name="txtNumOfBottles750" />
