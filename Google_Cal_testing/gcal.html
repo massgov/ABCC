@@ -11,34 +11,15 @@
 <script src="../Google_Cal_testing/js/fullcalendar.js"></script>
 <script src="../Google_Cal_testing/js/fullcalendar.min.js"></script>
 <script src="../Google_Cal_testing/js/gcal.js"></script>
-	
 <script>
-  $(document).ready(function() {
+$(document).ready(function() {
     $('#calendar').fullCalendar({
-      header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,listYear'
-      },
-      displayEventTime: false, // don't show the time column in list view
-
-		// To make your own Google API key, follow the directions here:
-      // http://fullcalendar.io/docs/google_calendar/
-      googleCalendarApiKey: 'AIzaSyCDjD1TeoXKEzgJPhpPSHLqsQVOnWC0ceM',
-      // US Holidays
-      events: { 
-		  googleCalendarId: 'g09cod3s6fm9ea6vqosnj4erco@group.calendar.google.com'
-	  }
-      eventClick: function(event) {
-        // opens events in a popup window
-        window.open(event.url, 'gcalevent', 'width=700,height=600');
-        return false;
-      },
-      loading: function(bool) {
-        $('#loading').toggle(bool);
-      }
+        googleCalendarApiKey: 'AIzaSyCDjD1TeoXKEzgJPhpPSHLqsQVOnWC0ceM',
+        events: {
+            googleCalendarId: 'g09cod3s6fm9ea6vqosnj4erco@group.calendar.google.com'
+        }
     });
-  });
+});
 </script>
 <!--<style>
   body {
