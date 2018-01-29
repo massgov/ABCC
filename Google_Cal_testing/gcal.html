@@ -14,14 +14,39 @@
 <script>
 $(document).ready(function() {
     $('#calendar').fullCalendar({
+<<<<<<< HEAD
         googleCalendarApiKey: 'AIzaSyCDjD1TeoXKEzgJPhpPSHLqsQVOnWC0ceM',
         events: {
             googleCalendarId: 'g09cod3s6fm9ea6vqosnj4erco@group.calendar.google.com'
         }
+=======
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,listYear'
+      },
+      displayEventTime: false, // don't show the time column in list view
+
+		// To make your own Google API key, follow the directions here:
+      // http://fullcalendar.io/docs/google_calendar/
+      googleCalendarApiKey: 'AIzaSyD6tmrqDOxPKn1iSjclU1SvbCLyEh16N6U',
+      // US Holidays
+      events: { 
+		  googleCalendarId: 'g09cod3s6fm9ea6vqosnj4erco@group.calendar.google.com'
+	  }
+      eventClick: function(event) {
+        // opens events in a popup window
+        window.open(event.url, 'gcalevent', 'width=700,height=600');
+        return false;
+      },
+      loading: function(bool) {
+        $('#loading').toggle(bool);
+      }
+>>>>>>> 95a05d8128fb2dc0ebcc6536619080940f5a2fc6
     });
 });
 </script>
-<!--<style>
+<style>
   body {
     margin: 40px 10px;
     padding: 0;
@@ -38,7 +63,7 @@ $(document).ready(function() {
     max-width: 900px;
     margin: 0 auto;
   }
-</style>-->
+</style>
 </head>
 <body>
 
