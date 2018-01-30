@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
  <html>
  <head>
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -12,36 +12,37 @@
   <script src="../Google_Cal_testing/js/gcal.js"></script>
   <script>
   
-
-  $(document).ready(function() {
-
-    $('#calendar').fullCalendar({
-
-      header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,listYear'
-      },
-
-      displayEventTime: false, // don't show the time column in list view
-
-      // To make your own Google API key, follow the directions here:
-      // http://fullcalendar.io/docs/google_calendar/
-      googleCalendarApiKey: 'AIzaSyAwXvL3o1USsD3hORNzItcD31nNyRPtUMg',// google api key yay
-
-     events: {
-            googleCalendarId: 'bk3j9l09orla8gg1kcqobj0p5k@group.calendar.google.com' // Sam calendar test
-
-      eventClick: function(event) {
-        // opens events in a popup window
-        window.open(event.url, 'gcalevent', 'width=700,height=600');
-        return false;
-      },
-
-      loading: function(bool) {
-        $('#loading').toggle(bool);
-      }
-
+ $(document).ready(function() {
+ 
+     $('#calendar').fullCalendar({
+ 
+       header: {
+         left: 'prev,next today',
+         center: 'title',
+         right: 'month,listYear'
+       },
+ 
+       displayEventTime: false, // don't show the time column in list view
+ 
+       // To make your own Google API key, follow the directions here:
+       // http://fullcalendar.io/docs/google_calendar/
+       googleCalendarApiKey: 'AIzaSyAwXvL3o1USsD3hORNzItcD31nNyRPtUMg',
+ 
+       events: 'bk3j9l09orla8gg1kcqobj0p5k@group.calendar.google.com', // Sam's calendar for testing!
+ 
+       eventClick: function(event) {
+         // opens events in a popup window
+         window.open(event.url, 'gcalevent', 'width=700,height=600');
+         return false;
+       },
+ 
+       loading: function(bool) {
+         $('#loading').toggle(bool);
+       }
+ 
+     });
+ 
+   });
  </script>
  
  <style>
@@ -59,7 +60,6 @@
    }
    #calendar {
      max-width:100%;
-	 height:auto;
      margin: 0 auto;
 	 max-height:auto;
    }
