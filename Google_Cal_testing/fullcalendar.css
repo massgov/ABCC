@@ -851,6 +851,7 @@ NOTE: use percentage font sizes or else old IE chokes
   /* ensure a space at bottom of cell for user selecting/clicking */ }
 
 .fc-basic-view .fc-body .fc-row {
+  background-color:white;
   min-height: 4em;
   /* ensure that all rows are at least this tall */ }
 
