@@ -325,7 +325,7 @@ temporary rendered events).
 --------------------------------------------------------------------------------------------------*/
 .fc-scroller {
   -webkit-overflow-scrolling: touch;
-	overflow-y:hidden !important;}
+}
 
 /* TODO: move to agenda/basic */
 .fc-scroller > .fc-day-grid,
@@ -616,7 +616,7 @@ TODO: more distinction between this file and common.css
 .fc-unthemed .fc-divider,
 .fc-unthemed .fc-popover .fc-header,
 .fc-unthemed .fc-list-heading td {
-  background: #eee; }
+  background: #43956f; }
 
 .fc-unthemed .fc-popover .fc-header .fc-close {
   color: #666; }
