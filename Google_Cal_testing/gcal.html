@@ -16,10 +16,17 @@
  
      $('#calendar').fullCalendar({
  
-  viewRender: function(view){
-    $("#calendar").fullCalendar("option", "contentHeight", (view.name === "month")? NaN : 9999);
-  }
-}		 
+  viewRender: function (view) {
+        var h;
+        if (view.name == "month") {
+            h = NaN;
+        }
+        else {
+            h = 2500;  // high enough to avoid scrollbars
+        }
+
+        $('#calendar').fullCalendar('option', 'contentHeight', h);
+    }
        header: {
          left: 'prev,next today',
          center: 'title',
