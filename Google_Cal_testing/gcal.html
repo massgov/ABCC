@@ -16,6 +16,10 @@
  
      $('#calendar').fullCalendar({
  
+  viewRender: function(view){
+    $("#calendar").fullCalendar("option", "contentHeight", (view.name === "month")? NaN : 9999);
+  }
+}		 
        header: {
          left: 'prev,next today',
          center: 'title',
