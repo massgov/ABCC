@@ -3,7 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Calendar Demo</title>
-
 <link href="../Google_Cal_testing/fullcalendar.css" rel="stylesheet">
 <link href="../Google_Cal_testing/fullcalendar.print.min.css" rel="stylesheet" media="print">
 <script src="../Google_Cal_testing/js/moment.min.js"></script>
@@ -11,17 +10,9 @@
 <script src="../Google_Cal_testing/js/fullcalendar.js"></script>
 <script src="../Google_Cal_testing/js/gcal.js"></script>
 <script>
-
-$(document).ready(function() {
+ $(document).ready(function() {
 
     $('#calendar').fullCalendar({
-        googleCalendarApiKey: 'AIzaSyCDjD1TeoXKEzgJPhpPSHLqsQVOnWC0ceM',
-        events: {
-            googleCalendarId: 'bk3j9l09orla8gg1kcqobj0p5k@group.calendar.google.com' //Sam calendar
-        }
-    });
-}); 
-=======
 
       header: {
         left: 'prev,next today',
@@ -33,9 +24,10 @@ $(document).ready(function() {
 
       // To make your own Google API key, follow the directions here:
       // http://fullcalendar.io/docs/google_calendar/
-      googleCalendarApiKey: 'AIzaSyAwXvL3o1USsD3hORNzItcD31nNyRPtUMg',
+      googleCalendarApiKey: 'AIzaSyAwXvL3o1USsD3hORNzItcD31nNyRPtUMg',// Google API Key
 
-      events: 'g09cod3s6fm9ea6vqosnj4erco@group.calendar.google.com',
+     events: {
+            googleCalendarId: 'bk3j9l09orla8gg1kcqobj0p5k@group.calendar.google.com' //Sam's calendar for testing
 
       eventClick: function(event) {
         // opens events in a popup window
@@ -50,7 +42,7 @@ $(document).ready(function() {
     });
 
   });
->>>>>>> d40ba30cce426dbde2511dc5cece677e1e5da66a
+	
 </script>
 <!--<style>
   body {
