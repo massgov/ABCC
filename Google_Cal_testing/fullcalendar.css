@@ -325,7 +325,7 @@ temporary rendered events).
 --------------------------------------------------------------------------------------------------*/
 .fc-scroller {
   -webkit-overflow-scrolling: touch;
-overflow-y:hidden;}
+overflow-y:hidden !important;}
 
 .fc-day-grid-container {
 	overflow-y: hidden;
