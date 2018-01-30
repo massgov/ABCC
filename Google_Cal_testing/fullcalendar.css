@@ -327,6 +327,10 @@ temporary rendered events).
   -webkit-overflow-scrolling: touch;
 overflow-y:hidden;}
 
+.fc-day-grid-container {
+	overflow-y: hidden;
+}
+
 /* TODO: move to agenda/basic */
 .fc-scroller > .fc-day-grid,
 .fc-scroller > .fc-time-grid {
