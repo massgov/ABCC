@@ -15,23 +15,12 @@
  $(document).ready(function() {
  
      $('#calendar').fullCalendar({
- 
-  viewRender: function (view) {
-        var h;
-        if (view.name == "month") {
-            h = NaN;
-        }
-        else {
-            h = 2500;  // high enough to avoid scrollbars
-        }
-
-        $('#calendar').fullCalendar('option', 'contentHeight', h);
-    }
+		 
        header: {
          left: 'prev,next today',
          center: 'title',
          right: 'month,listYear',
-		 height: "auto"
+		 height: "99999"
        },
  
        displayEventTime: false, // don't show the time column in list view
