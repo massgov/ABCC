@@ -340,7 +340,7 @@ temporary rendered events).
   /* default BORDER color */ }
 
 .fc-event,
-.fc-event-dot {
+.fc-event-dot { /** Displayed calendar event color **/
   background-color: #3a87ad;
   /* default BACKGROUND color */ }
 

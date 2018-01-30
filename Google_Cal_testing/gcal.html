@@ -2,17 +2,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+    <title>Calendar Demo</title>
+<link rel="stylesheet" href="https://mayflower.digital.mass.gov/assets/css/base-theme-generated.css" media="all" />
 <link href="../Google_Cal_testing/fullcalendar.css" rel="stylesheet">
-<link href="../Google_Cal_testing/fullcalendar.min.css" rel="stylesheet">
 <link href="../Google_Cal_testing/fullcalendar.print.min.css" rel="stylesheet" media="print">
 <script src="../Google_Cal_testing/js/moment.min.js"></script>
 <script src="../Google_Cal_testing/js/jquery.min.js"></script>
 <script src="../Google_Cal_testing/js/fullcalendar.js"></script>
-<script src="../Google_Cal_testing/js/fullcalendar.min.js"></script>
 <script src="../Google_Cal_testing/js/gcal.js"></script>
 <script>
+
 $(document).ready(function() {
+
     $('#calendar').fullCalendar({
         googleCalendarApiKey: 'AIzaSyCDjD1TeoXKEzgJPhpPSHLqsQVOnWC0ceM',
         events: {
@@ -20,6 +21,36 @@ $(document).ready(function() {
         }
     });
 }); 
+=======
+
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,listYear'
+      },
+
+      displayEventTime: false, // don't show the time column in list view
+
+      // To make your own Google API key, follow the directions here:
+      // http://fullcalendar.io/docs/google_calendar/
+      googleCalendarApiKey: 'AIzaSyAwXvL3o1USsD3hORNzItcD31nNyRPtUMg',
+
+      events: 'g09cod3s6fm9ea6vqosnj4erco@group.calendar.google.com',
+
+      eventClick: function(event) {
+        // opens events in a popup window
+        window.open(event.url, 'gcalevent', 'width=700,height=600');
+        return false;
+      },
+
+      loading: function(bool) {
+        $('#loading').toggle(bool);
+      }
+
+    });
+
+  });
+>>>>>>> d40ba30cce426dbde2511dc5cece677e1e5da66a
 </script>
 <!--<style>
   body {
