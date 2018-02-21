@@ -22,13 +22,14 @@
          right: 'month,listYear'
        },
  
-       displayEventTime: false, // don't show the time column in list view
+       displayEventTime: true, // show time in column view
  
        // To make your own Google API key, follow the directions here:
        // http://fullcalendar.io/docs/google_calendar/
        googleCalendarApiKey: 'AIzaSyAwXvL3o1USsD3hORNzItcD31nNyRPtUMg',
  
-       events: 'massabcckg@gmail.com', // ABCC calendar for testing!
+       events: 'massabcckg@gmail.com', // ABCC calendar ID
+       currentTimezone: 'local', // an option!
  
        eventClick: function(event) {
          // opens events in a popup window
